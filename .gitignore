@@ -3,3 +3,4 @@ venv
 .idea
 out
 lib
+example.json
