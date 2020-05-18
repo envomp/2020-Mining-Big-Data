@@ -9,12 +9,12 @@ def convert_dict_to_csv(dict):
                    'totalDiagnosticErrors', 'differentSlugs', 'differentCourses', 'commitsStyleOK', 'averageGrade',
                    'medianGrade']
 
-    csv_columns_percent = ['totalDiagnosticErrors_per_totalCommits', 'totalTestsPassed_per_totalTestsRan',
-                           'commitsStyleOK_per_totalCommits']
+    csv_columns_percent = ['totalDiagnosticErrors_per_differentSlugs', 'totalTestsPassed_per_totalTestsRan',
+                           'commitsStyleOK_per_totalCommits', 'differentSlugs_per_differentCourses']
 
     to_drop = ['id', 'uniid', 'lastTested', 'medianGrade']
-    to_drop_extra_only = ['totalCommits', 'totalTestsRan', 'differentCourses', 'totalTestsPassed',
-                          'totalDiagnosticErrors', 'commitsStyleOK', 'commitsStyleOK_per_totalCommits', 'differentSlugs']
+    to_drop_extra_only = ['totalCommits', 'totalTestsRan', 'differentCourses', 'totalTestsPassed', 'differentSlugs',
+                          'totalDiagnosticErrors', 'commitsStyleOK', 'commitsStyleOK_per_totalCommits']
 
     try:
 
